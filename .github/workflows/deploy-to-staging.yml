@@ -28,19 +28,19 @@ jobs:
       --parameter-overrides \"${PARAMETER_OVERRIDES}\"" 
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_BUCKET_PREFIX: "aws-sam-cli-managed-default-samclisourcebucket-testing-12345678"
-      AWS_DEPLOY_BUCKET: "cascade-aip-marcom-tamu-edu-edge-rewrite"
+      AWS_BUCKET_PREFIX: "aws-sam-cli-managed-default-samclisourcebucket-testing-change-me"
+      AWS_DEPLOY_BUCKET: "cascade-aip-website-tamu-edu-edge-rewrite-change-me"
       AWS_DEFAULT_REGION: 'us-east-1'
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_STACK_NAME: "cascade-aip-marcom-tamu-edu-edge-rewrite"
+      AWS_STACK_NAME: "cascade-aip-website-tamu-edu-edge-rewrite"
       SAM_CLI_TELEMETRY: 0
       TEMPLATE: 'template.yaml'
       PARAMETER_OVERRIDES: >-
-        ParameterKey=Alias,ParameterValue=marcomm-website-example-staging.aws.cloud.tamu.edu 
-        ParameterKey=BucketName,ParameterValue=marcomm-website-example-staging.aws.cloud.tamu.edu 
-        ParameterKey=CertARN,ParameterValue=arn:aws:acm:us-east-1:449349294279:certificate/0aaea236-4b20-413e-bdcd-60a2cfe657ab
+        ParameterKey=Alias,ParameterValue=general-website-example-staging.aws.cloud.tamu.edu 
+        ParameterKey=BucketName,ParameterValue=general-website-example-staging.aws.cloud.tamu.edu 
+        ParameterKey=CertARN,ParameterValue=set-to-ARN-for-cert-that-matches-general-website-example-staging.aws.cloud.tamu.edu
         ParameterKey=DefaultTTL,ParameterValue=60 
-        ParameterKey=Description,ParameterValue=MarComm-website-example 
+        ParameterKey=Description,ParameterValue=General-website-example 
         ParameterKey=MaxTTL,ParameterValue=60 
-        ParameterKey=LoggingBucketName,ParameterValue=marcomm-website-example-staging-logs.aws.cloud.tamu.edu 
-        ParameterKey=RulesURL,ParameterValue=https://raw.githubusercontent.com/aggie-innovation-platform-private/aws-tamu-lambda-redirect-rules-main/staging/rules/rules.json?token=ABA6AIJAZ5K5IVI7XLXQMJ27Y65UI
+        ParameterKey=LoggingBucketName,ParameterValue=General-website-example-staging-logs.aws.cloud.tamu.edu 
+        ParameterKey=RulesURL,ParameterValue=https://raw.githubusercontent.com/aggie-innovation-platform-private/aip-aws-lambda-redirect-rules-base/main/rules/rules.json
