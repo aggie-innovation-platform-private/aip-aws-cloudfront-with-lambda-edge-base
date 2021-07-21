@@ -1,5 +1,7 @@
 # aws-tamu-cloudfront-with-lambda-edge
 
+[![HIPAA](https://app.soluble.cloud/api/v1/public/badges/689cf262-3ffa-4ab9-97f8-3f3840947038.svg)](https://app.soluble.cloud/repos/details/github.com/aggie-innovation-platform-private/aip-aws-cloudfront-with-lambda-edge-base)  [![IaC](https://app.soluble.cloud/api/v1/public/badges/92a5e6ff-7260-47c1-9e25-2e6e9988e30e.svg)](https://app.soluble.cloud/repos/details/github.com/aggie-innovation-platform-private/aip-aws-cloudfront-with-lambda-edge-base)  [![CIS](https://app.soluble.cloud/api/v1/public/badges/426f0ac7-362e-44d4-8fea-b0bfef1e483c.svg)](https://app.soluble.cloud/repos/details/github.com/aggie-innovation-platform-private/aip-aws-cloudfront-with-lambda-edge-base)  
+
 This project contains source code and supporting files for a CloudFront + Lambda@Edge rewrite serverless application that you can 
 deploy with the SAM CLI. It includes the following files and folders.
 
